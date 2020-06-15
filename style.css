@@ -1,0 +1,324 @@
+﻿/*Geral*/
+html{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+body{
+	margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100hv;
+    display: table;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+
+/*Pagina Inicial*/
+
+.box1{
+    background-image: url(imagens/gif0.gif);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+.box1 .j1{
+	text-align: center;
+}
+
+.j1 .nav{
+	height: 82px;
+}
+
+.nav {
+	margin: 0;
+    height: 50px;
+    list-style: none;
+    background: rgba(0,0,0,0.2);
+}
+
+.nav li{
+	margin-top: 26px;
+    display: inline-block; 
+}
+
+.nav li a{
+	transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 25px 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.nav li a:hover{
+	transition: 0.5s;
+	color: black;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 15px 60px;
+}
+
+.text_inicio h1{
+    color: #1C1C1C;
+    font-size: 5rem;
+    font-family: sans-serif;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    margin-top: 180px;
+    text-transform: uppercase;
+}
+
+.text_inicio .parallax{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Sobre */
+.box2{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+.box2 h1{
+    color: #7B68EE;
+    font-size: 4rem;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.box2 .sobre{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box2 .text{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 80px;
+}
+
+.text p{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+
+/* Habilidades */
+.skills{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/gif1.gif);
+    display: table;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.98;
+}
+
+.skills h1{
+    color: #7B68EE;
+    font-size: 4rem;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.skills .hab{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.skills .skill_list{
+    width: 500px;
+    margin: 60px auto;
+    color: #7B68EE;
+}
+
+.skills .skill_list li{
+    list-style: none;
+    margin: 40px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.bar{
+    background-color: gray;
+    height: 10px;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    overflow: hidden;
+    
+}
+
+.bar span{
+    height: 10px;
+    float: left;
+    background: #40E0D0; 
+}
+
+
+
+.html{
+    width: 70%;
+    animation: html 2s;
+}
+
+.ht{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.css{
+    width: 40%;
+    animation: html 2s;
+}
+
+.cs{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.python{
+    width:  75%;
+    animation: html 2s;
+}
+
+.py{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.c{
+    width: 30%;
+    animation: html 2s;
+}
+
+.ci{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Animação*/
+
+[data-anime] {
+  opacity: 0;
+  transition: .2s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes c{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+
+/*Projetos*/
+
+.projects{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+.projects h1{
+    color: #7B68EE;
+    font-size: 4rem;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.projects .pro{
+    background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
+    background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
