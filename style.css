@@ -1,4 +1,5 @@
-﻿/*Geral*/
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+/*Geral*/
 html{
 	margin: 0px;
 	padding: 0px;
@@ -296,16 +297,14 @@ body{
 
 
 /*Projetos*/
-
-.projects{
-    height: 100vh;
+.text_project{
     width: 100%;
-    background-position: center;
     display: table;
     background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.98;
 }
-
-.projects h1{
+.text_project h1{
     color: #7B68EE;
     font-size: 4rem;
     font-family: sans-serif;
@@ -315,10 +314,110 @@ body{
     text-transform: uppercase;
 }
 
-.projects .pro{
+.text_project .pro{
     background: -webkit-linear-gradient(top, #40E0D0 0%, #008080 100%);
     background: -webkit-linear-gradient(bottom, #40E0D0 0%,	#008080 100%);
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.projects{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+.container .box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255);
+}
+
+.container .box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
+    left: -2px;
+    background-color: #000;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.container .box .content{
+    position: relative;
+    padding: 20px;
+}
+
+.container .box .content h2{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.container .box:hover .content h2{
+    top: -140;
+}
+
+.container .box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container .box .content a{
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #000;
+    display: inline-block;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+    color: #000;
+    
+}
+
+.container .box:hover .content a{
+    transform: translateY(20px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .box .content a:hover{
+    background-color: #000;
+    color: #fff;
 }
